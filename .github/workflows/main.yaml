@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
-      - run: npm coverage
+      - run: npm run coverage
 
       - uses: codecov/codecov-action@v2
         with:
