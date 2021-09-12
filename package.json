@@ -6,7 +6,7 @@
   "scripts": {
     "start": "tsc && node dist/index.js",
     "test": "mocha -r ts-node/register test/**/*.spec.ts",
-    "coverage": "nyc --reporter=lcov npm run test"
+    "coverage": "nyc --reporter=clover --reporter=lcov npm run test"
   },
   "repository": {
     "type": "git",
