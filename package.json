@@ -6,7 +6,27 @@
   "scripts": {
     "start": "tsc && node dist/index.js",
     "test": "mocha -r ts-node/register test/**/*.spec.ts",
-    "coverage": "nyc --reporter=clover --reporter=lcov npm run test"
+    "coverage": "nyc npm run test"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "exclude": [
+      "coverage/**/*",
+      "test/**/*",
+      "dist/**/*"
+    ],
+    "reporter": [
+      "clover",
+      "lcov",
+      "text"
+    ],
+    "all": true,
+    "require": [
+      "ts-node/register",
+      "source-map-support/register"
+    ]
   },
   "repository": {
     "type": "git",
