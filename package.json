@@ -1,0 +1,30 @@
+{
+  "name": "typescript_codecov",
+  "description": "typescript codecov project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts",
+    "coverage": "nyc --reporter=lcov npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbharathkumarreddy/typescript_codecov.git"
+  },
+  "author": "bharath kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbharathkumarreddy/typescript_codecov/issues"
+  },
+  "homepage": "https://github.com/bbharathkumarreddy/typescript_codecov#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.1",
+    "nyc": "^15.1.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
