@@ -24,8 +24,7 @@
     ],
     "all": true,
     "require": [
-      "ts-node/register",
-      "source-map-support/register"
+      "ts-node/register"
     ]
   },
   "repository": {
